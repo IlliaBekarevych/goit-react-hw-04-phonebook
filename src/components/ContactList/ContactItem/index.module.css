@@ -1,0 +1,16 @@
+.item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.item:nth-child(odd) {
+  background-color: rgb(202, 202, 202);
+  border-radius: 10px;
+}
+
+.btn {
+  cursor: pointer;
+}
