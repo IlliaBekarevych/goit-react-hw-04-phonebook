@@ -1,10 +1,10 @@
 import ContactItem from './ContactItem';
 import PropTypes from 'prop-types';
-import i from './index.module.css'
+import s from './index.module.css'
 
 const ContactList = ({ visibleContacts, deleteContact }) => {
   return (
-    <ul className={i.list}>
+    <ul className={s.list}>
       {visibleContacts.map(({ id, name, number }) => (
         <ContactItem
           key={id}

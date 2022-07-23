@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import i from './index.module.css';
+import s from './index.module.css';
 
 const Filter = ({ filter, onChange }) => {
   return (
     <label>
       Find contact by name
       <input
-        className={i.input}
+        className={s.input}
         type="text"
         name="filter"
         value={filter}
