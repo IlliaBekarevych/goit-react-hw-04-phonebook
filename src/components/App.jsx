@@ -17,12 +17,6 @@ function App() {
   );
   const [filter, setFilter] = useState('');
 
-  useEffect(() => {
-    const parseContacts = JSON.parse(window.localStorage.getItem('contacts'));
-    if (parseContacts) {
-      setContscts(parseContacts);
-    }
-  }, []);
 
   useEffect(() => {
     window.localStorage.setItem('contacts', JSON.stringify(contacts));
